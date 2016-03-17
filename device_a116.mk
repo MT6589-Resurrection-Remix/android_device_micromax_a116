@@ -119,6 +119,8 @@ PRODUCT_PACKAGES += \
 
 # libcorkscrew is needed for some of the PVR stuff.
 PRODUCT_PACKAGES += \
-	libcorkscrew
+	libcorkscrew \
+        pvrsrvinit \
+        libPVRScopeServices.so
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)

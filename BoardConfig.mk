@@ -109,7 +109,6 @@ BOARD_SEPOLICY_UNION += \
     file_contexts \
     device.te \
     netd.te \
-    pvrsrvctl.te \
     surfaceflinger.te \
 
 DEVICE_RESOLUTION := 720x1280

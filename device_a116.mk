@@ -87,9 +87,6 @@ PRODUCT_PROPERTY_OVERRIDES := \
 	wifi.interface=wlan0 \
 	wifi.tethering.interface=ap0
 
-#Enable dual sim by default
-persist.radio.multisim.config=dsds
-
 PRODUCT_TAGS += dalvik.gc.type-precise
 
 PRODUCT_PACKAGES += \
@@ -119,7 +116,7 @@ PRODUCT_PACKAGES += \
 # libcorkscrew is needed for some of the PVR stuff.
 PRODUCT_PACKAGES += \
 	libcorkscrew \
-        pvrsrvinit \
-        libPVRScopeServices.so
+        pvrsrvctl \
+        libPVRScopeServices
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)

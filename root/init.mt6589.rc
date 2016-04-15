@@ -387,12 +387,11 @@ on post-fs-data
     chown system system /proc/wmt_tm/wfd_stat
 
 # SGX init
-service pvrsrvctl /system/vendor/bin/pvrsrvctl --no-module --start
-    class main
+service pvrsrvctl /system/vendor/bin/pvrsrvctl
+    class core
     user root
     group root
     oneshot
-    disabled
 
 # Connectivity related services
 #service hald /system/bin/hald
